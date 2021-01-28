@@ -1,4 +1,4 @@
-package com.learning.multithreading.chapter01;
+package com.learning.multithreading.chapter01.basics;
 
 class Runner1{
 
