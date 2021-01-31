@@ -27,9 +27,9 @@ public class AtomicExample {
         System.out.println(atomicExample.counterAtomic);
 
         AtomicExample atomicExample2 = new AtomicExample();
-        Thread t3 = new Thread(atomicExample::increment);
+        Thread t3 = new Thread(atomicExample2::increment);
         t3.start();
-        Thread t4 = new Thread(atomicExample::increment);
+        Thread t4 = new Thread(atomicExample2::increment);
         t4.start();
         t3.join();
         t4.join();
